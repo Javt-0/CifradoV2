@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="174dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+        android:text="Texto Cifrado"
+        android:textAlignment="center"
+        android:textColor="#E1192A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/btnAjustes"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:width="2dp"
+        android:height="100dp"
+        android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+        android:text="Ajustes"
+        android:textSize="22sp"
+        app:cornerRadius="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btnCifrar"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:width="2dp"
+        android:height="100dp"
+        android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+        android:text="CIFRAR"
+        android:textSize="20sp"
+        app:cornerRadius="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <Button
+        android:id="@+id/btnDescifrado"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:width="2dp"
+        android:height="100dp"
+        android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+        android:text="DESCIFRAR"
+        android:textSize="20sp"
+        app:cornerRadius="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <EditText
+        android:id="@+id/txtCifrado"
+        android:layout_width="388dp"
+        android:layout_height="231dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <EditText
+        android:id="@+id/txtDescifrado"
+        android:layout_width="388dp"
+        android:layout_height="231dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="174dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+        android:text="Texto Descifrado"
+        android:textAlignment="center"
+        android:textColor="#4EA152"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/txtAlEscribir"
+        android:layout_width="216dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Cifrar al escribir"
+        android:textAlignment="textStart"
+        android:textColor="#9DA19D"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="185dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Cifrado Cesar"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+</androidx.constraintlayout.widget.ConstraintLayout>
